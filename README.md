@@ -11,4 +11,4 @@ React.js, Node.js, Express.js, mongoDB
 
 ## Screen shot:
 
-![App Screenshot](preview/UI1)
+![App Screenshot](https://github.com/SujoyKrHaldar/Expense-tracker-MERN/blob/master/preview/UI1.png)
