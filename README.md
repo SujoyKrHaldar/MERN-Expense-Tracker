@@ -11,4 +11,4 @@ React.js, Node.js, Express.js, mongoDB
 
 ## Screen shot:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](preview/UI1)
