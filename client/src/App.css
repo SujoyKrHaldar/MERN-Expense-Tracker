@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-family: "Bona Nova", serif;
+  margin: 0;
+}
+
+h3 {
+  margin: 40px 0 10px;
+  font-size: 24px;
+  font-family: "Bona Nova", serif;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  padding: 40px 27px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d8d8d8;
+}
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #000000;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #131313;
+  color: #fff;
+  border: 0;
+  display: block;
+  margin: 30px 0 10px;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 289px;
+  overflow-y: auto;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border: 1px solid #c1c1c1;
+  border-right: 5px solid #000000;
+}
+
+.list li.minus {
+  border: 1px solid #c0392b;
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.5s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
